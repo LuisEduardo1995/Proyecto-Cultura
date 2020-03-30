@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="modelo/claseUsuario.php" method="POST" autocomplete="off" class="full-box logInForm">
+                <input type="text" name="correo" placeholder="Correo" >
+                <input type="password" name="clave" placeholder="Contraseña" >
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+        
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="#">
+                <input type="text" placeholder="Nombre" required>
+                
+                <input type="text" placeholder="apellido" required>
+                
+                <input type="text" placeholder="Corrreo" required>
+
+                <input type="password" placeholder="Clave" required>
+
+                <input type="email" placeholder="Repetir Clave" required>
+                
+                <input type="text" placeholder="edad" required>
+                
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="#">¿Olvide mi Contraseña?</a>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
+</body>
+</html>
